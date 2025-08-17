@@ -1,0 +1,14 @@
+# requirements.txt
+
+# Core deep learning libraries
+torch==2.5.1
+torchvision==0.20.1
+
+# Data handling and scientific computing
+pandas==2.2.3
+numpy==2.2.5
+
+# Utilities
+tqdm
+kaggle
+Pillow
