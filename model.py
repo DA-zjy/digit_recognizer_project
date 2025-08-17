@@ -121,4 +121,4 @@ class SimpleCNN(nn.Module):
         return output
     
 # model = SimpleCNN()
-model = ResNet34()
+model = ResNet18()

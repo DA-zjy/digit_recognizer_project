@@ -8,7 +8,7 @@ from tqdm import tqdm # 引入tqdm，一个强大的进度条工具
 
 # 从我们自己的模块中导入
 import config
-from model import ResNet34
+from model import ResNet18
 from dataset import get_train_val_loaders
 
 def train_one_epoch(model, device, train_loader, optimizer, criterion):
@@ -76,7 +76,7 @@ def main():
     train_loader, val_loader = get_train_val_loaders()
     
     # 实例化模型并移动到设备
-    model = ResNet34().to(config.DEVICE)
+    model = ResNet18().to(config.DEVICE)
     
     # 定义损失函数和优化器
     criterion = nn.CrossEntropyLoss(label_smoothing=0.1)

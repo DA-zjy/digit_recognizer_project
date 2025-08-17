@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 # 从我们自己的模块中导入
 import config
-from model import ResNet34
+from model import ResNet18
 from dataset import get_test_loader # 我们只需要测试数据加载器
 
 def predict():
@@ -17,7 +17,7 @@ def predict():
     test_loader = get_test_loader()
     
     # 2. 实例化模型并移动到设备
-    model = ResNet34().to(config.DEVICE)
+    model = ResNet18().to(config.DEVICE)
     
     # 3. 加载训练好的最佳模型权重
     best_model_path = f"{config.CHECKPOINT_PATH}/digit_recognizer_epoch_8.pth"
