@@ -1,0 +1,15 @@
+.sercets
+
+# Datasets
+data/
+
+# Model checkpoints
+checkpoints/
+
+# Python specific
+__pycache__/
+*.pyc
+
+# IDE/Editor specific
+.vscode/
+.idea/
